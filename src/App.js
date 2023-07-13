@@ -1,10 +1,10 @@
-import Apping from "./Components/Fetch";
+import Apping from './Components/Fetch';
 import './App.css'
 function App() {
   return (
     <div className="App">
       {
-        <Apping />
+       <Apping/>
       }
     </div>
   );
