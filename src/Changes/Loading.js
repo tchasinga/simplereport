@@ -1,7 +1,7 @@
 const GetLoading = () => {
     return (
         <div>
-            <h1>Welcom here... for really</h1>
+            <h1>Waiting while the API call...</h1>
         </div>
     );
 }

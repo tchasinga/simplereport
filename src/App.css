@@ -40,3 +40,11 @@
 *{
   font-family: 'Poppins' , sans-serif;
 }
+
+.Apping{
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.MakeGridSystem{}

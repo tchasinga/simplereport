@@ -36,7 +36,7 @@ function Apping() {
       {isPending && <GetLoading/>}
     {data &&
       data.hints.map((item) => (
-        <div>
+        <div className="MakeGridSystem" key={item.id}>
           <img src={item.food.image} alt="" />
           <p>{item.food.category}</p>
           <p>{item.food.foodId}</p>
