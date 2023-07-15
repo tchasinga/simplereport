@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import GetLoading from "../Changes/Loading";
+import Maindisplayer from "../Code/Maindisplayer";
 
 function Apping() {
   const [data, setData] = useState();
@@ -34,16 +35,7 @@ function Apping() {
   return (
     <div className="Apping">
       {isPending && <GetLoading/>}
-    {data &&
-      data.hints.map((item) => (
-        <div className="MakeGridSystem" key={item.id}>
-          <img src={item.food.image} alt="" />
-          <p>{item.food.category}</p>
-          <p>{item.food.foodId}</p>
-          <p>{item.food.knownAs}</p>
-          <button>Welcom</button>
-        </div>
-      ))}
+      <Maindisplayer data={data} webtiltle = 'Welcom in food Api'/> 
   </div>
   );
 }
